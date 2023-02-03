@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './login.scss'
 
 const Login = () => {
@@ -6,12 +7,21 @@ const Login = () => {
     <div className='login'>
       <div className="card">
         <div className="left">
-          <h1>Hello World</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit dolorum voluptates!</p>
+          <h1>Thadi Social.</h1>
+          <p>Connect with friends and the world around you on Thadisocial</p>
           <span>Don't you have an account?</span>
+          <Link to='/register'>
           <button>Register</button>
+          </Link>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <h1>Login</h1>
+          <form>
+            <input type="text" placeholder='Username' />
+            <input type="password" placeholder='Password' />
+            <button>Login</button>
+          </form>
+        </div>
       </div>
     </div>
   )
