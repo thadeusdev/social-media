@@ -44,7 +44,7 @@ function App() {
           element: <Home/>
         },
         {
-          path: '/frofile/:id',
+          path: '/profile/:id',
           element: <Profile/>
         },
       ]
