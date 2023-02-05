@@ -7,6 +7,7 @@ import Navbar from './components/navbar/Navbar'
 import LeftBar from './components/leftBar/LeftBar'
 import RightBar from './components/rightBar/RightBar'
 import { createBrowserRouter, Navigate, Outlet, RouterProvider } from 'react-router-dom';
+import './style.scss'
 
 function App() {
   const currentUser = true

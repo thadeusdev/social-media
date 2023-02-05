@@ -1,9 +1,19 @@
+@import '../../style.scss';
+
 .rightBar{
     flex: 3;
     position: sticky;
     top: 70px;
     height: calc(100vh - 70px);
     overflow: scroll;
+
+    @include mobile{
+        display: none;
+    }
+
+    @include tablet{
+        display: none;
+    }
 
     &::-webkit-scrollbar{
         display: none;
